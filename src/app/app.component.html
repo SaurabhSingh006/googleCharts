@@ -1,0 +1,10 @@
+<div style="display: flex;justify-content: space-between; margin: 0 50px;">
+  <button (click)="btnHandlerDaily()" class="btn btn-primary">Get Daily Analitics</button>
+  <button (click)="btnHandlerHour()" class="btn btn-primary">Get Hours Analitics</button>
+  <button (click)="btnHandlerMonthly()" class="btn btn-primary">Get Monthly Analitics</button>
+</div>
+<br>
+
+<app-charts [data]="dailyData"></app-charts>
+
+{{ dailyData | json }}
